@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+<body class="gradient-background">
+  <div class="container mt-5">
+    <h1>Your Blog Posts</h1>
+  
+    <% blogPosts.forEach((post) => { %>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title"><%= post.title %></h5>
+          <p class="card-text"><%= post.content %></p>
+          <p class="card-text">Date: <%= new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) %></p>
+          <img class="pic" src="<%= post.picurl %>" class="card-img-top" alt="...">
+        </div>
+      </div>
+    <% }) %>
+  
+    <a href="/blogpost"><button class="btn btn-primary">Create another blog</button></a>
+    <a href="/"><button class="btn btn-primary">Log out</button></a>
+  </div>
+</body>
+
+<%- include('partials/footer') %>

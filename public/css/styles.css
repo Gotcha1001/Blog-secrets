@@ -1,0 +1,68 @@
+
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+
+
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+
+body {
+  background-color: #E8ECEF; /* Set a fallback background color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  min-height: 100vh; /* Set minimum height to cover entire viewport */
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #3a0d92, #800812, #e00404);
+  background-size: 180% 180%;
+  animation: gradient-animation 2s ease infinite;
+  width: 100%; /* Set width to 100% */
+  text-align: center; /* Center text within the body */
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.pic {
+  height: 500px;
+  width: 500px;
+}
+
+
+.card {
+  margin: 0 auto; /* This will center the card horizontally */
+  max-width: 800px; /* Set maximum width of card */
+}

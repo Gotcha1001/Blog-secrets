@@ -1,0 +1,42 @@
+<%- include('partials/header') %>
+
+<body class="gradient-background">
+  <div class="container mt-5">
+    <h1 class="text-center">Create a New Blog Post</h1>
+  
+    <div class="row justify-content-center">
+      <div class="col-sm-8">
+        <div class="card">
+          <div class="card-body">
+  
+            <!-- Makes POST request to /blogpost route -->
+            <form action="/blogpost" method="POST">
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" name="title" required>
+              </div>
+              <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" class="form-control" name="date" required>
+              </div>
+              <div class="form-group">
+                <label for="content">Content</label>
+                <textarea class="form-control" name="content" rows="6" required></textarea>
+              </div>
+              <div class="form-group">
+                <label for="picurl">Image URL</label>
+                <input type="text" class="form-control" name="picurl">
+              </div>
+              <button type="submit" class="btn btn-dark">Create Post</button>
+            </form>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <a href="/blogpostdisplay"><button class="btn btn-primary mt-3">Go to your Blogs</button></a>
+  </div>
+</body>
+
+<%- include('partials/footer') %>
